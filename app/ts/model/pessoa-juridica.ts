@@ -4,4 +4,8 @@ class PessoaJuridica extends Pessoa {
         super(`${nome} - Jurídica`, idade, dataNascimento);
         this._cnpj = cnpj
     }
+
+    get cnpj(): string {
+        return this._cnpj
+    }
 }
