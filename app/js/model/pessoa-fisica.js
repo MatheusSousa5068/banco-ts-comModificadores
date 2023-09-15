@@ -3,4 +3,7 @@ class PessoaFisica extends Pessoa {
         super(`${nome} - Física`, idade, dataNascimento);
         this._cpf = cpf;
     }
+    get cpf(): string {
+        return this._cpf
+    }
 }
